@@ -77,7 +77,7 @@
 
         /* --- Hero Section --- */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('front garden.jpg') no-repeat center center/cover;
             height: 85vh;
             display: flex;
             align-items: center;
@@ -140,6 +140,24 @@
             margin: 10px auto 0;
         }
 
+        /* --- About Section Split --- */
+        .about-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .about-text {
+            font-size: 18px;
+        }
+
         /* --- Features & Amenities --- */
         .grid-3 {
             display: grid;
@@ -173,10 +191,19 @@
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .attraction-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
         }
 
         .attraction-info {
             padding: 20px;
+            flex-grow: 1;
         }
 
         .attraction-info h3 {
@@ -268,8 +295,15 @@
 
     <section id="about">
         <h2 class="section-title">Your Peaceful Retreat in the Hills</h2>
-        <div style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 18px;">
-            <p>Nestled in the cozy hamlet of <strong>Naya Busty, Sonada</strong>, Red Maple Homestay offers breathtaking panoramic views of rolling clouds, lush green terraces, and deep pine woods. Escape the hustle of city life and wake up to pristine mountain air and traditional local hospitality.</p>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="homestay.jpg" alt="Red Maple Homestay building facade in Naya Busty Sonada">
+            </div>
+            <div class="about-text">
+                <p>Nestled in the cozy hamlet of <strong>Naya Busty, Sonada</strong>, Red Maple Homestay offers breathtaking panoramic views of rolling clouds, lush green terraces, and deep pine woods.</p>
+                <br>
+                <p>Escape the hustle of city life and wake up to pristine mountain air, beautiful prayer flags catching the breeze, and traditional local hospitality.</p>
+            </div>
         </div>
     </section>
 
@@ -294,30 +328,55 @@
     <section id="attractions">
         <h2 class="section-title">Nearby Attractions in Sonada</h2>
         <div class="attractions-grid">
+            
             <div class="attraction-card">
+                <img src="sonada railway station.jpg" alt="Historic Sonada Railway Station building and tracks">
                 <div class="attraction-info">
-                    <h3>🚂 Historic Sonada Railway Station</h3>
-                    <p>Part of the legendary Darjeeling Himalayan Railway (DHR) UNESCO World Heritage site, built in 1881.</p>
+                    <h3>🚂 Sonada Railway Station</h3>
+                    <p>Part of the legendary Darjeeling Himalayan Railway (DHR) UNESCO World Heritage site, built in 1883.</p>
                 </div>
             </div>
+
             <div class="attraction-card">
+                <img src="Sonada-Monastery.jpg" alt="Samdrup Darjay Choling Monastery main shrine building front view">
                 <div class="attraction-info">
                     <h3>🙏 Samdrup Darjay Choling Monastery</h3>
-                    <p>A beautiful Buddhist monastery featuring stunning traditional Tibetan architecture, vibrant murals, and sacred stupas.</p>
+                    <p>A beautiful Buddhist monastery featuring stunning traditional Tibetan architecture and vibrant spiritual murals.</p>
                 </div>
             </div>
+
             <div class="attraction-card">
+                <img src="Indreni-Falls-Sonada-1024x576.webp" alt="Indreni Falls waterfall with a natural rainbow across the water">
                 <div class="attraction-info">
                     <h3>🌈 Indreni Falls</h3>
-                    <p>A pristine rocky waterfall hidden within nature where you can catch spectacular sights of natural rainbows dance in the mist.</p>
+                    <p>A pristine rocky waterfall hidden within nature where you can catch spectacular sights of natural rainbows dancing in the mist.</p>
                 </div>
             </div>
+
             <div class="attraction-card">
+                <img src="Groto-Sonada.jpg" alt="The Holy Grotto religious shrine with golden statues on stone steps">
                 <div class="attraction-info">
                     <h3>✝️ The Holy Grotto</h3>
                     <p>A beautifully constructed religious shrine with life-sized golden statues nestled peacefully against the rocky slopes.</p>
                 </div>
             </div>
+
+            <div class="attraction-card">
+                <img src="sonada-monastery-west-bengal-india-samdrup-darjay-choling-monastery-PM56B6.jpg" alt="White and gold Buddhist stupas at the Sonada Monastery hill slope">
+                <div class="attraction-info">
+                    <h3>☸️ Sacred Stupas</h3>
+                    <p>Beautiful traditional white and gold stupas lined along the hillside path near the monastery grounds.</p>
+                </div>
+            </div>
+
+            <div class="attraction-card">
+                <img src="roff top view.jpg" alt="Lush green pine forest canopy view from the homestay rooftop">
+                <div class="attraction-info">
+                    <h3>🌲 Pine Forest Views</h3>
+                    <p>Incredible overlooking views of the deep pine tree canopies and mountain villages directly from our rooftop deck.</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -350,8 +409,8 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 Red Maple Homestay - Naya Busty, Sonada, Darjeeling. All Rights Reserved.</p>
+        <p>© 2026 Red Maple Homestay - Naya Busty, Sonada, Darjeeling. All Rights Reserved.</p>
     </footer>
 
 </body>
-                                               </html>
+                                                                                                                                                          </html>
